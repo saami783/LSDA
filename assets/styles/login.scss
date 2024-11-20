@@ -1,0 +1,70 @@
+:root {
+    --lsda-red: #8B0000;
+    --lsda-gold: #CFB53B;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    min-height: 100vh;
+}
+
+.login-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-logo {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 2rem;
+    display: block;
+}
+
+.form-title {
+    color: var(--lsda-red);
+}
+
+.btn-login {
+    background-color: var(--lsda-red);
+    border: none;
+    color: white !important;
+}
+
+.btn-login:hover {
+    background-color: #6b0000;
+}
+
+.form-control:focus {
+    border-color: var(--lsda-red);
+    box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.25);
+}
+
+.disclaimer {
+    background-color: rgba(139, 0, 0, 0.1);
+    border-left: 4px solid #8B0000;
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+.login-box {
+    max-width: 500px;
+}
+.login-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.form-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.btn-login {
+    padding: 0.5rem 1rem;
+}
