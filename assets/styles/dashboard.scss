@@ -1,0 +1,13 @@
+:root {
+  --lsda-red: #8B0000;
+  --lsda-gold: #CFB53B;
+}
+.bg-lsda-red {
+  background-color: var(--lsda-red);
+}
+.text-lsda-red {
+  color: var(--lsda-red);
+}
+.border-lsda-red {
+  border-color: var(--lsda-red);
+}

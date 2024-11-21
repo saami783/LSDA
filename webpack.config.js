@@ -13,6 +13,7 @@ Encore
     .setPublicPath('/build')
     .addEntry('app', './assets/app.js')
     .addStyleEntry('login', './assets/styles/login.scss')
+    .addStyleEntry('dashboard', './assets/styles/dashboard.scss')
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 

@@ -1,0 +1,56 @@
+{% extends 'layout/user_base.html.twig' %}
+
+{% block title %}LSDA Intranet - Profil{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <div class="container">
+        <h1 class="mb-3">Gestion de votre compte</h1>
+        <p class="lead">Mettez à jour vos informations personnelles, changez votre mot de passe ou mettez à jour
+            votre adresse
+            pour assurer que votre profil reste à jour.</p>
+
+        <!-- Informations du compte -->
+        <section class="mb-4 p-3 bg-white rounded shadow" style="opacity: 0.98;">
+            <h2>Informations du compte</h2>
+            {{ form_start(infoForm, {'attr': {'class': 'form-horizontal w-50'}}) }}
+            {{ form_row(infoForm.email, {'attr': {'class': 'form-control form-control-sm'}}) }}
+            {{ form_row(infoForm.firstname, {'attr': {'class': 'form-control form-control-sm'}}) }}
+            {{ form_row(infoForm.lastname, {'attr': {'class': 'form-control form-control-sm'}}) }}
+            <button type="submit" class="btn btn-primary mt-2 btn-sm rounded-pill" style="width: auto;">Sauvegarder
+                les informations
+            </button>
+            {{ form_end(infoForm) }}
+        </section>
+
+        <!-- Mise à jour du mot de passe -->
+        <section class="mb-4 p-3 bg-white rounded shadow" style="opacity: 0.98;">
+            <h2>Mettre à jour le mot de passe</h2>
+            {{ form_start(passwordForm, {'attr': {'class': 'form-horizontal w-50'}}) }}
+            {{ form_row(passwordForm.plainPassword, {'attr': {'class': 'form-control form-control-sm'}}) }}
+            <button type="submit" class="btn btn-primary mt-2 btn-sm rounded-pill" style="width: auto;">Changer le
+                mot de passe
+            </button>
+            {{ form_end(passwordForm) }}
+        </section>
+
+
+        <!-- Suppression du compte -->
+        <section class="mb-4 p-3 bg-white rounded shadow" style="opacity: 0.98;">
+            <h2>Supprimer mon compte</h2>
+            <p>Une fois votre compte supprimé, toutes ses ressources et données seront définitivement
+                supprimées.</p>
+            <a href="" class="btn btn-danger btn-sm rounded-pill"
+               style="width: auto;">Supprimer mon compte</a>
+        </section>
+
+    </div>
+</div>
+<div class="pb-5"></div>
+
+{% endblock %}
